@@ -1,0 +1,15 @@
+import math
+import os
+import random
+import re
+import sys
+def alternatingCharacters(s):
+  contador=0
+  for i in range(len(s)-1):
+    sw=1;
+    print("i",i,"cont",contador)
+    if s[i]==s[i+1]:
+      sw+=1
+    if sw>1:
+      contador+=1
+  return contador
